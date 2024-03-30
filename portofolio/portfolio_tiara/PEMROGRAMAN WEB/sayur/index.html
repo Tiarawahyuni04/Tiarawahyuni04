@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian Sayuran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Pembelian Sayuran</h2>
+        <form action="process.php" method="post">
+            <label for="nama_sayuran">Nama Sayuran:</label>
+            <input type="text" name="nama_sayuran" required>
+
+            <label for="harga">Harga (per kg):</label>
+            <input type="number" step="0.01" name="harga" required>
+
+            <label for="stok">Stok:</label>
+            <input type="number" name="stok" required>
+
+            <button type="submit">Tambah Sayuran</button>
+        </form>
+
+        <h2>Data Sayuran</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama Sayuran</th>
+                    <th>Harga (per kg)</th>
+                    <th>Stok</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Tampilkan data sayuran disini -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
